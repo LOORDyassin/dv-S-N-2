@@ -1,0 +1,13 @@
+form{
+    width:80%;
+    padding: 20px;
+}
+legend{
+    font-weight: bold;
+}
+input[type=text]{
+    margin-top: 20px ;
+    margin-bottom: 20px;
+    width: 3cm;
+    height: 0.5cm;
+}

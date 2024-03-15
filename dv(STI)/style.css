@@ -1,0 +1,78 @@
+body{
+    background-color: #7DCCA9;
+}
+
+header{
+    border:2px solid #000;
+    position: absolute;
+    width: 98%;
+    height:19%;
+}
+header img{
+    position:absolute;
+    top: 20%;
+    left: 80%;
+    width: 70px;
+    height: 50px;
+}
+header div{
+    position:absolute;
+    left:75%;
+    bottom:15%;
+    font-size:20px;
+}
+h1{
+    position:absolute;
+    left:10%;
+    font-size:60px;
+}
+nav{
+    position: absolute;
+    border:2px solid #000;
+    bottom: 10%;
+    width: 25%;
+    height:69%;
+}
+nav div{
+    position:absolute;
+    margin: 70px;
+    font-size: 20px;
+}
+section{
+    position: absolute;
+    border:2px solid #000;
+    left:25.8% ;
+    bottom: 10%;
+    width: 72.8%;
+    height:69%;
+}
+p{
+    font-size: 23px;
+}
+footer{
+    position: absolute;
+    border:2px solid #000;
+    bottom: 0%;
+    width: 98%;
+    height:10%;
+}
+footer p{
+    top:10px;
+    bottom: 0%;
+    width: 98%;
+    height:10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

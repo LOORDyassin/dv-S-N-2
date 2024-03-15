@@ -1,0 +1,16 @@
+form{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 12px;
+    border-radius: 10px;
+    width: 90%;
+    padding: 20px;
+}
+legend{
+    font-weight: bold;
+}
+input[type=text]{
+    height: 0.5cm;
+    width: 4.7cm;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}

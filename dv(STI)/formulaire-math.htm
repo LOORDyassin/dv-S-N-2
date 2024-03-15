@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Untitled</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style-math.css">
+    <script src="formulaire-math.js"></script>
+</head>
+
+<body onload="f1()">
+        <form>
+            <!--t5arejlek ay réel kima jaa jaa mabin[0,1]:-->
+            <fieldset>
+                <legend>Fonction de Math sans paramétre</legend>
+                <label for="ra">Math.random()</label>
+                <input type="text" id="random" />
+            </fieldset>
+            <fieldset>
+                <legend>Fonction de Math à un  paramétre</legend>
+                <p>
+                    <label for="x">donner un nombre x:</label>
+                    <input type="text" id="x" onblur="f2()"/>
+                </p>
+                <!--ta3melek el ima el motel9a mta3 (x): -->
+                <label for="abs">Math.abs(x)</label>
+                <input type="text" id="abs"/>
+                <!--ta3melek el rasin mta3 (x):-->
+                <label for="sqrt">Math.sqrt(x)</label>
+                <input type="text" id="sqrt"/>
+                <!--t5arejlek a9rab 3adad ll (x) ithaken bel fasel ya3ni
+                par exemple: {Math.round(3.7)=}:-->
+                <label for="round">Math.round(x)</label>
+                <input type="text" id="round"/>
+                <!--t5arejlek ell 3dad man8ir fasel tne7ihoulek el fasel ya3ni: -->
+                <label for="t">Math.trunc(x)</label>
+                <input type="text" id="t"/>
+            </fieldset>
+        </form>
+</body>
+
+</html>

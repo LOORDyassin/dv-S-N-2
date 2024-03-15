@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Untitled</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style-chaine.css">
+  <script src="formulaire-chaine.js"></script>
+</head>
+
+<body>
+    <form>
+        <!--a3ti chaine men 3andek:  -->
+        <fieldset>
+            <legend>saisie de ch:</legend>
+            <label for="c">ch</label>
+            <input type="text" class="box" id="c"/>
+        </fieldset>
+        <!--tnajem t9oul sous-chaine ya3ni hethi ta3tiha mnin tebda ou 9adech men
+        ra9em bech taffichih:-->
+        <fieldset>
+            <legend>ch.substr()</legend>
+            <label for="d">début</label>
+            <input type="text" class="box" id="d"/>
+            <label for="nb">nb caractéres:</label>
+            <input type="text" class="box" id="nb" onblur="res1()"/>
+            <label for="r">résultas</label>
+            <input type="text" class="box" id="r">
+        </fieldset>
+        <!--ta3tih melawel el kelma amahi eli t7eb tbadalha ou ba3d ta3tih bech t7eb
+        tbadalha ou 3ala fekra ibadal ken awil kelma yal9aha ya3ni ken l9aha
+        maoujouda fel jomla akthar men mara ibadal ken awil oi7da:-->
+        <fieldset>
+            <legend>ch.replace()</legend>
+            <label for="ch1">ch1:</label>
+            <input type="text" class="box" id="ch1"/>
+            <label for="ch2">ch2:</label>
+            <input type="text" class="box" id="ch2"/>
+            <label for="re">résultas:</label>
+            <input type="text" class="box" id="re" onfocus="res2()">
+        </fieldset>
+        <!--ta3tih el 7arf eli t7eb tlawej a3lih melawel ou ba3d ta3tih ra9em ya3ni
+        ilawej 3ala heka el 7aref men awel el jomla 7atet ll 7arf eli
+        ra9mou(pos-fin):-->
+        <fieldset>
+            <legend>ch.lastIndexOf()</legend>
+            <label for="sch">sch:</label>
+            <input type="text" class="box" id="sch"/>
+            <label for="pos">pos-fin:</label>
+            <input type="text" class="box" id="pos"/>
+            <label for="res">résultas</label>
+            <input type="text" class="box" id="res" onfocus="res3()">
+        </fieldset>
+        <!--ye7seblek 9adech toul el kelma:-->
+        <fieldset>
+            <legend>ch.length</legend>
+            <label for="resu">résultas</label>
+            <input type="text" class="box" id="resu" onfocus="res4()">
+        </fieldset>
+        <!--hiya bel python (convch)ya3ni t7awelek el kelma ou el ar9am ll  chaine: -->
+        <fieldset>
+            <legend>string(ch)</legend>
+            <label for="resul">résultas</label>
+            <input type="text" class="box" id="resul" onfocus="res5()">
+        </fieldset>
+        <!--techbah ll (valeur)eli maoujouda fel python ya3ni hethi ta3tiiha
+        chai t5arejlek menha ken el ar9am: -->
+        <fieldset>
+            <legend>number(ch)</legend>
+            <label for="result">résultas</label>
+            <input type="text" class="box" id="result" onfocus="res6()">
+        </fieldset>
+        <!--yaffichi ewel ar9am yal9ahom ken l9aa carractére mel lawel yo5rej ou
+        ken l9aa ar9am yafichihom lin yousel ll caractere yo5rej:-->
+        <fieldset>
+            <legend>parseInt(ch)</legend>
+            <label for="resulta">résultas</label>
+            <input type="text" class="box" id="resulta" onfocus="res7()">
+        </fieldset>
+        <!--yaffichi ewel ar9am yal9ahom ken l9aa carractére mel lawel yo5rej ou
+        ken l9aa ar9am yafichihom lin yousel ll caractere yo5rej ama el (.)
+        ye7sebha s7i7a ya3ni ye7sebha vergul:-->
+        <fieldset>
+            <legend>parseFloant(ch)</legend>
+            <label for="resultas">résultas</label>
+            <input type="text" class="box" id="resultas" onfocus="res8()">
+        </fieldset>
+        <!--ta3tih enti ra9em ou houoi i5arejle el 7arf eli i9ablou fel chaine:-->
+        <fieldset>
+            <legend>ch.charAt(i)</legend>
+            <label for="c1">c1:</label>
+            <input type="text" class="box" id="c1"/>
+            <label for="ressultas1">résultas</label>
+            <input type="text" class="box" id="resultas1" onfocus="res9()">
+        </fieldset>
+        <!--t5arejlek ra9em el 7arf eli ta3tihoulha ou ithaken ta3tiha kelma
+        t5arejlek ra9em el7aref lawel eli fiha: -->
+        <fieldset>
+            <legend>ch.indexOf(sch,debut)</legend>
+            <label for="sch">sch:</label>
+            <input type="text" class="box" id="sch"/>
+            <label for="debut">debut:</label>
+            <input type="text" class="box" id="debut"/>
+            <label for="ressultas2">résultas</label>
+            <input type="text" class="box" id="resultas2" onfocus="res10()">
+        </fieldset>
+        <!--ta3tiha kelemtin ou hiya tlasa9homlek leb3a4hom:  -->
+        <fieldset>
+            <legend>ch=ch1+ch2</legend>
+            <label for="ch11">ch1:</label>
+            <input type="text" class="box" id="ch11"/>
+            <label for="ch22">ch2:</label>
+            <input type="text" class="box" id="ch22"/>
+            <label for="ressultas3">résultas</label>
+            <input type="text" class="box" id="resultas3" onfocus="res11()">
+        </fieldset>
+        <!--ta3tiha ayy jomla trodlek 7roufa lkol majisqule:-->
+        <fieldset>
+            <legend>ch.toUpperCase()</legend>
+            <label for="resultas4">résultas</label>
+            <input type="text" class="box" id="resultas4" onfocus="res12()">
+        </fieldset>
+        <!--ta3tiha ayy kelma trrodlek le7rouf mte3ha kol minusqule: -->
+        <fieldset>
+            <legend>ch.toLowerCase()</legend>
+            <label for="resultas5">résultas</label>
+            <input type="text" class="box" id="resultas5" onfocus="res13()">
+        </fieldset>
+        <!--tne7ilek el esspaset eli fel jomla ali a3ll limin ou 3all lisar:-->
+        <fieldset>
+            <legend>ch.trim()</legend>
+            <label for="resultas6">résultas</label>
+            <input type="text" class="box" id="resultas6" onfocus="res14()">
+        </fieldset>
+        <!--nchalah tefehmou ou njtjib 20 hh nchalah!-->
+    </form>
+</body>
+
+</html>
