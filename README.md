@@ -1,1 +1,1 @@
-![Uploading image.png…]()
+![430673077_1109016857039518_6092557869731631080_n](https://github.com/LOORDyassin/dv-S-N-2/assets/151580584/26df36dd-d519-4c1b-8b93-366e90a8aca7)
