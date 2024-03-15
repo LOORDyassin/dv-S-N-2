@@ -6,12 +6,11 @@
     <title>Untitled</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="formulaire-date.js"></script>
 </head>
 
 <body onload="f1()">
         <form>
-            <fieldset>
+            <fieldset >
                 <legend>Objet date</legend>
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                 <label for="newdate">new date</label>
@@ -30,7 +29,25 @@
                 <label for="forme">d'en forme jj/mm/aaaa</label>
                 <input type="text" id="forme"/>
             </fieldset>
+            <fieldset onclick="f2()">
+                <legend>date 7aliyan</legend>
+                <label for="inner1"><b><ins>date el youma:</ins></b></label>
+                <p id="inner1"></p><br>
+                <label for="inner2"><b><ins>date eli 7abt 3liha ena:</ins></b></label>
+                <p id="inner2"></p>
+            </fieldset>
+            <fieldset>
+                <legend>3ala chnou clikit</legend>
+                <select id="myselect" onchange="f3()">
+                    <option>5amar</option>
+                    <option>ali</option>
+                    <option>mneja</option>
+                    <option>"hbayeb"</option>
+                </select>
+                <p id="deno"></p>
+            </fieldset>
         </form>
+    <script src="formulaire-date.js"></script>
 </body>
 
 </html>
