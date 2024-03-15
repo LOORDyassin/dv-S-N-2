@@ -10,3 +10,16 @@ function f1(){
     document.getElementById("forme").value=k+"/"+m+"/"+a
 
 }
+function f2(){
+    d=new Date()
+    document.getElementById ("inner1" ).innerHTML=d
+    d.setDate(3)
+    d.setMonth(11)
+    d.setFullYear(2015)
+    document.getElementById ("inner2" ).innerHTML=d
+}
+
+function f3(){
+    x=document.getElementById ( "myselect").value
+    document.getElementById ("deno" ).innerHTML=(x+"  "+"is gay")
+}
